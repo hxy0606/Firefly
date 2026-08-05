@@ -53,6 +53,9 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 		url: "#",
 		icon: "material-symbols:person",
 		children: [
+			// 关于页面
+			LinkPresets.About,
+
 			// 动态
 			LinkPresets.Dynamic,
 
@@ -67,22 +70,25 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 
 			// 书签导航
 			LinkPresets.Booknav,
+			
+			// 打赏
+			LinkPresets.Sponsor,
 		],
 	});
 
 	// 关于及其子菜单
-	links.push({
-		name: "关于",
-		url: "#",
-		icon: "material-symbols:info",
-		children: [
-			// 打赏
-			LinkPresets.Sponsor,
+	// links.push({
+	// 	name: "关于",
+	// 	url: "#",
+	// 	icon: "material-symbols:info",
+	// 	children: [
+	// 		// 打赏
+	// 		LinkPresets.Sponsor,
 
-			// 关于页面
-			LinkPresets.About,
-		],
-	});
+	// 		// 关于页面
+	// 		LinkPresets.About,
+	// 	],
+	// });
 
 	// 自定义导航栏链接
 	links.push({
