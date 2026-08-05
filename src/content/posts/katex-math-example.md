@@ -5,6 +5,7 @@ description: 展示 Firefly 主题对 KaTeX 数学公式的支持，包括行内
 tags: [KaTeX, Math, 示例]
 category: 文章示例
 image: api
+draft: true
 slug: katex-math-example
 ---
 

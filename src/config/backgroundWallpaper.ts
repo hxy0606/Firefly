@@ -39,12 +39,12 @@ export const backgroundWallpaper: BackgroundWallpaperConfig = {
 		// 桌面背景图片（支持单张或多张随机）
 		// desktop: "assets/images/DesktopWallpaper/d1.avif",
 		desktop: [
-			"assets/images/DesktopWallpaper/d1.avif",
-			"assets/images/DesktopWallpaper/d2.avif",
-			"assets/images/DesktopWallpaper/d3.avif",
-			"assets/images/DesktopWallpaper/d4.avif",
-			"assets/images/DesktopWallpaper/d5.avif",
-			"assets/images/DesktopWallpaper/d6.avif",
+			"assets/images/DesktopWallpaper/d7.avif",
+			"assets/images/DesktopWallpaper/d8.avif",
+			"assets/images/DesktopWallpaper/d9.avif",
+			"assets/images/DesktopWallpaper/d10.avif",
+			"assets/images/DesktopWallpaper/d11.avif",
+			"assets/images/DesktopWallpaper/d12.avif",
 		],
 		// 移动背景图片（支持单张或多张随机）
 		// mobile: "assets/images/MobileWallpaper/m1.avif",
@@ -73,17 +73,17 @@ export const backgroundWallpaper: BackgroundWallpaperConfig = {
 			// 是否启用主页横幅文字
 			enable: true,
 			// 主页横幅主标题
-			title: "Lovely firefly!",
+			title: "Hyuxiao~",
 			// 主页横幅主标题字体大小
 			titleSize: "4.5rem",
 			// 主页横幅副标题
 			subtitle: [
-				"In Reddened Chrysalis, I Once Rest",
-				"From Shattered Sky, I Free Fall",
-				"Amidst Silenced Stars, I Deep Sleep",
-				"Upon Lighted Fyrefly, I Soon Gaze",
-				"From Undreamt Night, I Thence Shine",
-				"In Finalized Morrow, I Full Bloom",
+				"循此苦旅，以觅星辰",
+				"赌书消得泼茶香，当时只道是寻常",
+				"人生如逆旅，我亦是行人",
+				"林深时见鹿，溪午不闻钟",
+				"当时明月在，曾照彩云归",
+				"物是人非事事休，欲语泪先流",
 			],
 			// 主页横幅副标题字体大小
 			subtitleSize: "1.5rem",
@@ -97,7 +97,7 @@ export const backgroundWallpaper: BackgroundWallpaperConfig = {
 				// 删除速度（毫秒）
 				deleteSpeed: 50,
 				// 完全显示后的暂停时间（毫秒）
-				pauseTime: 2000,
+				pauseTime: 5000,
 			},
 		},
 		// 文章横幅信息："description" 显示描述，"meta" 显示日期、字数和阅读时长
@@ -135,11 +135,11 @@ export const backgroundWallpaper: BackgroundWallpaperConfig = {
 		// 壁纸轮播配置，横幅壁纸和全屏壁纸共享，仅在配置多张图片时生效
 		carousel: {
 			// 是否启用壁纸轮播；关闭时保持每次刷新随机显示一张
-			enable: false,
+			enable: true,
 			// 轮播切换间隔（毫秒）
 			interval: 5000,
 			// 过渡效果: 'fade' 渐变 | 'zoom' 缩放 | 'slide' 滑动 | 'kenburns' 旋转木马
-			transitionEffect: "zoom",
+			transitionEffect: "fade",
 		},
 	},
 	// Banner模式特有配置

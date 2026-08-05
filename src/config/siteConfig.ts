@@ -6,13 +6,13 @@ const SITE_LANG = "zh_CN";
 
 export const siteConfig: SiteConfig = {
 	// 站点标题
-	title: "Firefly",
+	title: "Bluetooth",
 
 	// 站点副标题
-	subtitle: "Demo site",
+	subtitle: "CoreSpec",
 
 	// 站点 URL
-	site_url: "https://firefly.cuteleaf.cn",
+	site_url: "https://hyuxiao.com",
 
 	// 站点描述
 	description:
