@@ -12,7 +12,7 @@ export const musicPlayerConfig: MusicPlayerConfig = {
 	mode: "local",
 
 	// 默认音量 (0-1)
-	volume: 0.7,
+	volume: 0.4,
 
 	// 播放模式：'list'=列表循环, 'one'=单曲循环, 'random'=随机播放
 	playMode: "list",
@@ -47,6 +47,27 @@ export const musicPlayerConfig: MusicPlayerConfig = {
 	// lrc: "[00:00.00]歌词内容...",
 	local: {
 		playlist: [
+			{
+				name: "竜姫 奏でる",
+				artist: "渡邊崇",
+				url: "/assets/music/竜姫 奏でる.mp3",
+				cover: "/assets/music/cover/1.webp",
+				lrc: "",
+			},
+			{
+				name: "Blue Dragon",
+				artist: "《医龙》电视剧配乐",
+				url: "/assets/music/Blue Dragon.mp3",
+				cover: "/assets/music/cover/2.webp",
+				lrc: "",
+			},
+			{
+				name: "夜的钢琴曲5",
+				artist: "文武贝",
+				url: "/assets/music/夜的钢琴曲5.mp3",
+				cover: "/assets/music/cover/3.webp",
+				lrc: "",
+			},
 			{
 				name: "使一颗心免于哀伤",
 				artist: "知更鸟 / HOYO-MiX / Chevy",
