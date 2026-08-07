@@ -1,6 +1,7 @@
 ---
 title: 蓝牙协议架构
 published: 2026-08-05
+updated: 2026-08-08
 description: 蓝牙协议架构。
 tags: [Bluetooth]
 category: Bluetooth
@@ -10,7 +11,7 @@ category: Bluetooth
 
 在前一篇蓝牙概述中，我们了解了蓝牙的基础定义、版本演进与各类应用场景。本篇我们基于蓝牙技术联盟 SIG 官方标准架构图，拆解蓝牙完整分层系统架构。首先我们需要理解两个概念：profile、protocol，配置文件和协议。协议是蓝牙底层数据传输的交互方式，配置文件是在协议的基础上定义了使用协议之后我们需要完成的任务。比如说A2DP（Advanced Audio Distribution Profile）就是基于AVDTP（Audio/Video Distribution Transport Protocol）完成音乐数据传输这一任务。
 
-![Bluetooth core system architecture](/images/image-20260807233144638.png "Optional title")
+![Bluetooth core system architecture](./images/image-20260807233144638.png "Optional title")
 
 整张架构图最核心的分割线是**HCI 接口**，它把蓝牙系统一分为二：上层运行协议栈的 Host 主机，下层负责无线信号收发的 Controller 控制器，两者通过标准化 HCI 通道传输控制指令与业务数据。
 
