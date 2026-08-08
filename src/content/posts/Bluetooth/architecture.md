@@ -2,8 +2,8 @@
 title: 蓝牙协议架构
 published: 2026-08-05
 updated: 2026-08-08
-description: 蓝牙协议架构。
-tags: [Bluetooth]
+description: 蓝牙协议架构，主要是核心系统架构和数据传输架构。
+tags: [architecture, Host, HCI, controller]
 category: Bluetooth
 ---
 

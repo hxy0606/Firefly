@@ -4,7 +4,7 @@ published: 2026-08-05
 updated: 2026-08-08
 description: 简单介绍蓝牙协议。
 image: ../images/bluetooth_overview.avif
-tags: [Bluetooth]
+tags: [overview]
 category: Bluetooth
 ---
 
