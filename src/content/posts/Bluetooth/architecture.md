@@ -15,7 +15,7 @@ category: Bluetooth
 
 # Core system architecture
 
-![Bluetooth core system architecture](./images/Figure 2.1.png "bluetooth core system arch")
+![Bluetooth core system architecture](./images/Figure_2.1.png "bluetooth core system arch")
 
 整张架构图最核心的分割线是**HCI 接口**，它把蓝牙系统一分为二：上层运行协议栈的 Host 主机，下层负责无线信号收发的 Controller 控制器，两者通过标准化 HCI 通道传输控制指令与业务数据。
 
@@ -92,27 +92,27 @@ Controller包含以下模块：
 
 通过UART传输层可发送五种 HCI 数据包： HCI Command packet、HCI Event packet、HCI ACL Data packet、HCI Synchronous Data packet以及HCI ISO Data packet。HCI Command packet只能由Host发送至Controller。HCI Event packet只能由Controller发送至Host。而 HCI ACL/Synchronous/ISO Data packet则可在Host和Controller之间双向发送。
 
-![HCI packet indicators](./images/Table 2.1.png "HCI packet indicators")
+![HCI packet indicators](./images/Table_2.1.png "HCI packet indicators")
 
 
 
 **HCI Data Formats**
 
-![HCI Command packet](./images/Figure 5.1.png "HCI Command packet")
+![HCI Command packet](./images/Figure_5.1.png "HCI Command packet")
 
 
 
-![HCI ACL Data packet](./images/Figure 5.2.png "HCI ACL Data packet")
+![HCI ACL Data packet](./images/Figure_5.2.png "HCI ACL Data packet")
 
 
 
-![HCI Event packet](./images/Figure 5.4.png "HCI Event packet")
+![HCI Event packet](./images/Figure_5.4.png "HCI Event packet")
 
 
 
 # Data Transport
 
-![data transport architecture](./images/Figure 3.1.png "data transport arch")
+![data transport architecture](./images/Figure_3.1.png "data transport arch")
 
 出于传输效率以及兼容旧版本的考量，蓝牙传输架构对逻辑层做了进一步划分，区分**逻辑链路（Logical Links）**与**逻辑传输（Logical Transports）**。该划分定义了通用的逻辑链路概念：逻辑链路用于在两台或多台设备之间提供一条独立通信通路。而逻辑传输则用来描述不同类型逻辑链路之间的相互依存关系，即一条逻辑链路可以复用、依附于另一条逻辑传输。例如 BR/EDR 中 ACL 作为基础逻辑链路，SCO 音频链路复用同一个 ACL 物理载体，这种依附关系就靠逻辑传输描述。
 
@@ -120,7 +120,7 @@ Controller包含以下模块：
 
 ## 1. Core traffic bearers
 
-![Bluetooth traffic bearers](./images/Figure 3.2.png "Bluetooth traffic bearers")
+![Bluetooth traffic bearers](./images/Figure_3.2.png "Bluetooth traffic bearers")
 
 | 符号 | 含义                                                         |
 | ---- | ------------------------------------------------------------ |
@@ -158,7 +158,7 @@ Controller包含以下模块：
 
 ### BR/EDR generic packet structure
 
-![BR/EDR packet structure](./images/Figure 3.4.png "BR/EDR packet structure")
+![BR/EDR packet structure](./images/Figure_3.4.png "BR/EDR packet structure")
 
 * **Channel Access Code（CAC）**
 
@@ -204,9 +204,9 @@ Controller包含以下模块：
 
 ### LE generic packet structure
 
-![BR/EDR packet structure](./images/Figure 3.5.png "BR/EDR packet structure")
+![BR/EDR packet structure](./images/Figure_3.5.png "BR/EDR packet structure")
 
 
 
-![BR/EDR packet structure](./images/Figure 3.6.png "BR/EDR packet structure")
+![BR/EDR packet structure](./images/Figure_3.6.png "BR/EDR packet structure")
 
